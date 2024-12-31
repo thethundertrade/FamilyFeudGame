@@ -1,0 +1,18 @@
+[
+  {
+    "question": "Name something you bring to a picnic",
+    "answers": [
+      { "text": "Food", "correct": true },
+      { "text": "Blanket", "correct": true },
+      { "text": "Umbrella", "correct": false }
+    ]
+  },
+  {
+    "question": "Name a popular pet",
+    "answers": [
+      { "text": "Dog", "correct": true },
+      { "text": "Cat", "correct": true },
+      { "text": "Snake", "correct": false }
+    ]
+  }
+]
