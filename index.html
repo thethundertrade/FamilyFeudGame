@@ -1,21 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Family Feud Game</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Feud Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Family Feud</h1>
-  <div id="game-board">
-    <div id="question">Click "Start Game" to begin!</div>
-    <ul id="answers"></ul>
-    <div id="controls">
-      <button id="start-game">Start Game</button>
-      <button id="next-question" style="display: none;">Next Question</button>
+    <div id="game-container">
+        <header>
+            <h1>Family Feud</h1>
+        </header>
+        <main>
+            <section id="question-section">
+                <h2 id="current-question">Question will appear here</h2>
+                <ul id="answers">
+                    <!-- Dynamic Answers -->
+                </ul>
+            </section>
+
+            <section id="score-section">
+                <h3>Score</h3>
+                <p>Round 1: <span id="round1-score">0</span></p>
+                <p>Round 2: <span id="round2-score">0</span></p>
+                <p>Round 3: <span id="round3-score">0</span></p>
+                <p>Bonus Round: <span id="bonus-score">0</span></p>
+                <h4>Total: <span id="total-score">0</span></h4>
+            </section>
+        </main>
+        <audio id="sound-effect" src="correct-answer.mp3"></audio>
     </div>
-  </div>
-  <script src="app.js"></script>
+
+    <script src="script.js"></script>
 </body>
 </html>
